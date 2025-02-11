@@ -31,12 +31,13 @@ class Test:
         browser = Home_page_menu(self.driver)
         #self.log.info("[+] Opening the Home page")
         browser.open_home_page(self.url)
-        if self.driver.title == "Human Resources Management Software | OrangeHRM":
+        if self.driver.title == "Human Resources Management Software | OrangeHRM 1":
             self.log.info("[+] Test case 01 Passed")
             self.driver.quit()
             assert True
         else:
             self.log.info("[+] Test case 01 Failed")
+            self.driver.save_screenshot(r"C:\Users\pranj\OneDrive\Desktop\Orangehrm\screenshots\test_01.png")
             self.driver.quit()
             assert False
     
@@ -140,3 +141,4 @@ class Test:
         time.sleep(30)
         form.submit(self.submite_button)
         form.test_negative_verification_demo_contact()
+        

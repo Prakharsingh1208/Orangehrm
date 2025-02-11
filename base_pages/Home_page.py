@@ -89,27 +89,30 @@ class form_filling:
             assert True
         else:
             self.log.info("[+] Test case 03 failed")
+            self.driver.save_screenshot(r"C:\Users\pranj\OneDrive\Desktop\Orangehrm\screenshots\test_03.png")
             self.driver.quit()
             assert False
     def test_negative_verification_demo_contact(self):
         if self.driver.current_url == "https://www.orangehrm.com/en/book-a-free-demo/demo-confirmation":
             self.log.info("[+] Test case 05 Failed")
             self.driver.quit()
-            assert True
+            assert False
         else:
             self.log.info("[+] Test case 05 Passed")
+            self.driver.save_screenshot(r"C:\Users\pranj\OneDrive\Desktop\Orangehrm\screenshots\test_05.png")
             self.driver.quit()
-            assert False
+            assert True
 
     def test_verification_sales_contact(self):
         if self.driver.current_url == "https://www.orangehrm.com/en/contact-sales/success":
             self.log.info("[+] Test case 02 passed")
             self.driver.quit()
-            assert False
+            assert True
         else:
             self.log.info("[+] Test case 02 Failed")
+            self.driver.save_screenshot(r"C:\Users\pranj\OneDrive\Desktop\Orangehrm\screenshots\test_02.png")
             self.driver.quit()
-            assert True
+            assert False
     
     def test_negative_verification_sales_contact(self):
         if self.driver.current_url == "https://www.orangehrm.com/en/contact-sales/success":
@@ -118,6 +121,7 @@ class form_filling:
             assert False
         else:
             self.log.info("[+] Test case 04 Passed")
+            self.driver.save_screenshot(r"C:\Users\pranj\OneDrive\Desktop\Orangehrm\screenshots\test_04.png")
             self.driver.quit()
             assert True
 
