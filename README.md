@@ -1,12 +1,12 @@
-# Orangehrm
+# Selenium Automation Framework
 Selenium Automation Framework<br>
-This project is a Selenium-based automation framework built from scratch using Python and pytest. It is designed for automated testing of web applications, with advanced utilities such as logging, screenshot capturing, multi-test execution, and configuration file management. The framework uses Selenium 4.x and pytest for test orchestration and reporting.
-
-Project Structure
-bash
-Copy
-Edit
-.
+This project is a Selenium-based automation framework built from scratch using Python and pytest. It is designed for automated testing of web applications, with advanced utilities such as logging, screenshot capturing, multi-test execution, and configuration file management. The framework uses Selenium 4.x and pytest for test orchestration and reporting.<br>
+<br>
+Project Structure<br>
+bash<br>
+Copy<br>
+Edit<br>
+.<br>
 ├── .idea/                      # Project configuration (IDE-specific files)
 ├── .pytest_cache/              # pytest cache files
 ├── .venv/                      # Virtual environment containing dependencies
