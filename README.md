@@ -7,18 +7,18 @@ bash<br>
 Copy<br>
 Edit<br>
 .<br>
-├── .idea/                      # Project configuration (IDE-specific files)
-├── .pytest_cache/              # pytest cache files
-├── .venv/                      # Virtual environment containing dependencies
-├── tests/                      # Test scripts for different functionalities
-├── utils/                      # Utility functions for logging, screenshots, etc.
-├── config/                     # Configuration files (e.g., test environment)
-├── reports/                    # Test reports and logs
-└── README.md                   # Project documentation (this file)
-Features
-Selenium 4.x: For web automation.
-pytest Integration: For test execution, assertions, and reporting.
-Screenshot Capturing: Captures screenshots on test failure.
-Logging Support: Logs all critical actions and test results.
-Configuration Management: Supports multiple test environments using configuration files.
-Multi-Test Execution: Run multiple test cases in parallel.
+├── .idea/                      # Project configuration (IDE-specific files)<br>
+├── .pytest_cache/              # pytest cache files<br>
+├── .venv/                      # Virtual environment containing dependencies<br>
+├── tests/                      # Test scripts for different functionalities<br>
+├── utils/                      # Utility functions for logging, screenshots, etc.<br>
+├── config/                     # Configuration files (e.g., test environment)<br>
+├── reports/                    # Test reports and logs<br>
+└── README.md                   # Project documentation (this file)<br>
+Features<br>
+Selenium 4.x: For web automation.<br>
+pytest Integration: For test execution, assertions, and reporting.<br>
+Screenshot Capturing: Captures screenshots on test failure.<br>
+Logging Support: Logs all critical actions and test results.<br>
+Configuration Management: Supports multiple test environments using configuration files.<br>
+Multi-Test Execution: Run multiple test cases in parallel.<br>
