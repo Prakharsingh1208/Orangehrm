@@ -1,0 +1,47 @@
+02/11/2025 07:43:49 AM: INFO: -----------------Test-01------------------
+02/11/2025 07:43:51 AM: INFO: [+] Opening the home page
+02/11/2025 07:43:55 AM: INFO: [+] Test case 01 Passed
+02/11/2025 07:43:57 AM: INFO: -----------------Test-02------------------
+02/11/2025 07:44:00 AM: INFO: [+] Opening the home page
+02/11/2025 07:44:03 AM: INFO: [+] Clicking the contact sales button
+02/11/2025 07:44:06 AM: INFO: [+] Entering the name
+02/11/2025 07:44:06 AM: INFO: [+] Entering the phone number
+02/11/2025 07:44:06 AM: INFO: [+] Entering the Email
+02/11/2025 07:44:06 AM: INFO: [+] Entering the country
+02/11/2025 07:44:06 AM: INFO: [+] Entering the number of employe
+02/11/2025 07:44:06 AM: INFO: [+] Entering the job title
+02/11/2025 07:44:06 AM: INFO: [+] Entering your meassage
+02/11/2025 07:44:36 AM: INFO: [+] Submitting the form
+02/11/2025 07:44:39 AM: INFO: [+] Test case 02 passed
+02/11/2025 07:44:42 AM: INFO: -----------------Test-03------------------
+02/11/2025 07:44:44 AM: INFO: [+] Opening the home page
+02/11/2025 07:44:47 AM: INFO: [+] Clicking the demo booking buttton
+02/11/2025 07:44:49 AM: INFO: [+] Entering the name
+02/11/2025 07:44:50 AM: INFO: [+] Entering the phone number
+02/11/2025 07:44:50 AM: INFO: [+] Entering the Email
+02/11/2025 07:44:50 AM: INFO: [+] Entering the company
+02/11/2025 07:44:50 AM: INFO: [+] Entering the country
+02/11/2025 07:44:50 AM: INFO: [+] Entering the number of employe
+02/11/2025 07:45:20 AM: INFO: [+] Submitting the form
+02/11/2025 07:45:23 AM: INFO: [+] Test case 03 passed
+02/11/2025 07:45:25 AM: INFO: -----------------Test-04------------------
+02/11/2025 07:45:27 AM: INFO: [+] Opening the home page
+02/11/2025 07:45:31 AM: INFO: [+] Clicking the contact sales button
+02/11/2025 07:45:33 AM: INFO: [+] Entering the phone number
+02/11/2025 07:45:33 AM: INFO: [+] Entering the Email
+02/11/2025 07:45:34 AM: INFO: [+] Entering the country
+02/11/2025 07:45:34 AM: INFO: [+] Entering the number of employe
+02/11/2025 07:45:34 AM: INFO: [+] Entering the job title
+02/11/2025 07:45:34 AM: INFO: [+] Entering your meassage
+02/11/2025 07:46:04 AM: INFO: [+] Submitting the form
+02/11/2025 07:46:04 AM: INFO: [+] Test case 04 Passed
+02/11/2025 07:46:07 AM: INFO: -----------------Test-05------------------
+02/11/2025 07:46:08 AM: INFO: [+] Opening the home page
+02/11/2025 07:46:45 AM: INFO: [+] Clicking the demo booking buttton
+02/11/2025 07:46:48 AM: INFO: [+] Entering the name
+02/11/2025 07:46:48 AM: INFO: [+] Entering the phone number
+02/11/2025 07:46:48 AM: INFO: [+] Entering the Email
+02/11/2025 07:46:48 AM: INFO: [+] Entering the company
+02/11/2025 07:46:48 AM: INFO: [+] Entering the number of employe
+02/11/2025 07:47:19 AM: INFO: [+] Submitting the form
+02/11/2025 07:47:21 AM: INFO: [+] Test case 05 Passed
