@@ -6,5 +6,4 @@ Selenium 4.x: For web automation.<br>
 pytest Integration: For test execution, assertions, and reporting.<br>
 Screenshot Capturing: Captures screenshots on test failure.<br>
 Logging Support: Logs all critical actions and test results.<br>
-Configuration Management: Supports multiple test environments using configuration files.<br>
 Multi-Test Execution: Run multiple test cases in parallel.<br>
