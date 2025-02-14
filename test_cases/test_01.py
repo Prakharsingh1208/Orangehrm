@@ -7,6 +7,7 @@ from base_pages.Home_page import Home_page_menu
 from base_pages.Home_page import form_filling
 from utilities.config_reader import ReadConfig_menu, ReadConfig_contact_form
 from utilities.custom_log import Log_gen
+from test_cases import conftest
 
 class Test:
     url = ReadConfig_menu.get_application_url()
@@ -25,11 +26,10 @@ class Test:
     your_message = ReadConfig_contact_form.get_your_message() 
     log = Log_gen.create_log()
 
-    def test_01_title_verification(self):
+    def test_01_title_verification(self,setup):
         self.log.info("-----------------Test-01------------------")
-        self.driver = webdriver.Chrome()
+        self.driver = setup
         browser = Home_page_menu(self.driver)
-        #self.log.info("[+] Opening the Home page")
         browser.open_home_page(self.url)
         if self.driver.title == "Human Resources Management Software | OrangeHRM 1":
             self.log.info("[+] Test case 01 Passed")
@@ -41,82 +41,52 @@ class Test:
             self.driver.quit()
             assert False
     
-    def test_02_positive_verfication_of_sales_contact_form(self):
+    def test_02_positive_verfication_of_sales_contact_form(self,setup):
         self.log.info("-----------------Test-02------------------")
-        self.driver = webdriver.Chrome()
+        self.driver = setup
         browser = Home_page_menu(self.driver)
-        #self.log.info("[+] Testing positivie test case on sale contact form")
-        #self.log.info("[+] Opening Homepage")
         browser.open_home_page(self.url)
-        #browser.Accept_cookie(self.cross_button)
-        #self.log.info("[+] Clicking on 'sales contact' button")
         browser.click_contact_sales_button(self.contact_sales)
-        #self.log.info("[+] Starting the form filling")
         form = form_filling(self.driver)
-        #self.log.info("[+] Entering the name")
+        time.sleep(10)
         form.enter_name(self.name)
-        #self.log.info("[+] Entering the phone number")
         form.enter_phone_number(self.phone_number)
-        #self.log.info("[+] Entering the email")
         form.enter_email(self.email)
-        #form.enter_company(self.company)
-        #self.log.info("[+] Entering the country")
         form.enter_country(self.country)
-        #self.log.info("[+] Entering the total number of employe")
         form.enter_no_of_employe(self.no_of_employe)
-        #self.log.info("[+] Entering the job title")
         form.job_title(self.job_title)
-        #self.log.info("[+] Entering your message")
         form.your_message(self.your_message)
-        #self.log.info("[+] Verifying the recaptcha")
         time.sleep(30)
-        #self.log.info("[+] Submiting the form")
         form.submit(self.submite_button)
         form.test_verification_sales_contact()
 
     
-    def test_03_positive_verificatio_of_demo_contact_form(self):
+    def test_03_positive_verificatio_of_demo_contact_form(self,setup):
         self.log.info("-----------------Test-03------------------")
-        self.driver = webdriver.Chrome()
+        self.driver = setup
         browser = Home_page_menu(self.driver)
-        #self.log.info("[+] Opening the Homepage")
         browser.open_home_page(self.url)
-        #self.log.info("[+] Clicking the demo booking button")
         browser.click_booking_button(self.demo_booking)
-        #self.log.info("[+] Starting the form filling")
         form = form_filling(self.driver)
-        #self.log.info("[+] Entering name")
         form.enter_name(self.name)
-        #self.log.info("[+] Entering phone number")
         form.enter_phone_number(self.phone_number)
-        #self.log.info("[+] Entering email")
         form.enter_email(self.email)
-        #self.log.info("[+] Entering company")
         form.enter_company(self.company)
-        #self.log.info("[+] Entering country")
         form.enter_country(self.country)
-        #self.log.info("[+] Entering number of employe")
         form.enter_no_of_employe(self.no_of_employe)
-        #self.log.info("[+] Veryfing the captcha")
         time.sleep(30)
-        #self.log.info("[+] Submitting the form")
         form.submit(self.submite_button)
         form.test_verification_demo_contact()
 
-    def test_04_negative_verfication_of_sales_contact_form(self):
+    def test_04_negative_verfication_of_sales_contact_form(self,setup):
         self.log.info("-----------------Test-04------------------")
-        self.driver = webdriver.Chrome()
+        self.driver = setup
         browser = Home_page_menu(self.driver)
-        #self.log.info("[+] Opening the Homepage")
         browser.open_home_page(self.url)
-        #browser.Accept_cookie(self.cross_button)
-        #self.log.info("[+] Opening the Homepage")
         browser.click_contact_sales_button(self.contact_sales)
         form = form_filling(self.driver)
-        #form.enter_name(self.name)
         form.enter_phone_number(self.phone_number)
         form.enter_email(self.email)
-        #form.enter_company(self.company)
         form.enter_country(self.country)
         form.enter_no_of_employe(self.no_of_employe)
         form.job_title(self.job_title)
@@ -125,9 +95,9 @@ class Test:
         form.submit(self.submite_button)
         form.test_negative_verification_sales_contact()
 
-    def test_05_negative_verificatio_of_demo_contact_form(self):
+    def test_05_negative_verificatio_of_demo_contact_form(self,setup):
         self.log.info("-----------------Test-05------------------")
-        self.driver = webdriver.Chrome()
+        self.driver = setup
         browser = Home_page_menu(self.driver)
         browser.open_home_page(self.url)
         browser.click_booking_button(self.demo_booking)
@@ -136,7 +106,6 @@ class Test:
         form.enter_phone_number(self.phone_number)
         form.enter_email(self.email)
         form.enter_company(self.company)
-        #form.enter_country(self.country)
         form.enter_no_of_employe(self.no_of_employe)
         time.sleep(30)
         form.submit(self.submite_button)
